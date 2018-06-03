@@ -1,0 +1,30 @@
+<div class="content" ng-controller="LoginController">
+	<div class="otpForm">
+		<form name="otpForm" ng-submit="otpSubmit();">
+			<div class="logo">
+				<div class="avatarLogo">
+					<h4>{{my_data.login.otp.title}}</h4>
+					<h3>XXXXXXXX{{getMobile}}</h3>
+				</div>
+				<div class="field">
+					<input type="number" name="" ng-model="otpNum" placeholder="Enter OTP" onKeyDown="if(this.value.length==4 && event.keyCode!=8) return false;"/>
+					<input type="submit" name="" value="{{loginText}}" />
+				</div>
+				<div class="fieldText">
+					<h4>{{my_data.login.otp.info}} <a href="" ng-click="userLogin('resend');">{{my_data.login.otp.resend}}</a></h4>
+				</div>
+			</div>
+			<div class="keep_logo">
+				<img src="images/main-logo.png"/>
+			</div>
+		</form>	
+		
+	</div>
+</div>
+<style type="text/css">
+	.rootParent{
+		position: relative;
+		height: 100%;
+		margin:0;
+	}
+</style>

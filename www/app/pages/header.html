@@ -1,0 +1,10 @@
+<div class="wrap" ng-if="title === 'Menu'">
+	<a href back-button class="backButton" ng-if="isBack"></a>
+	<div class="title"><span>Ryzodeg&trade;</span></div>
+    <a class="navIcon" ng-href="#languages"></a>
+</div>
+<div class="wrap" ng-if="title != 'Menu'">
+	<a href back-button class="backButton" ng-if="isBack"></a>
+	<div class="title"><span>{{title}}</span></div>
+	<a class="hamburg" ng-click="openMenu()"></a>
+</div>

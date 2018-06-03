@@ -1,0 +1,24 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+<div class="content pageLanguages">
+    <div class="langMenu">
+    	<ul>
+        	<li>
+            	<label ng-repeat="language in languages">
+                	<input type="radio" ng-model="user.lang" name="lang" ng-value="language.code" ng-change="getLanguage(language.code)">
+                    <span>{{language.text}}</span>
+                </label>
+
+            </li>
+        </ul>    
+    </div>
+</div>
+<style type="text/css">
+    .langMenu{
+        position: relative;
+        top:0;
+    }
+    .langMenu ul{
+        position: relative;
+    }
+</style>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title ng-bind="title + ' | Novomix'"></title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link href="css/app.css" rel="stylesheet">
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+</head>
+<body>
+<route-loading-indicator></route-loading-indicator>
+<div ng-view autoscroll="true" class="ng-cloak rootParent" ng-class="pageName"></div>
+<script src="js/libs.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+	<div class="calendarWrapper" ng-init="getCurrentMonth();">
+	<div class="monthLists">
+		<div class="listWrap">
+			<ul>
+				<li ng-repeat="month in monthNames" ng-class="{active : activeMonth === month}" ng-if="activeMonth === month">
+					<a href="" value="{{month}}" ng-click="viewDates($index,month);">{{month}}</a>
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<div class="dateLists" ng-if="noDate">
+		<div class="listWrap">
+			<ul>
+				<li ng-repeat="getdate in getView track by getdate.date" ng-class="{active : activeDate === getdate.date}" ng-click="selectedDate($index,getdate)">
+					<a href="">
+						<label class="dayhead">{{getdate.day}}</label>
+						<label class="date">{{getdate.date}}</label>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="content pagePedometer pageContent disclaimer">
+    <div class="dailyRecord">
+    	<form name="dailyForm" ng-submit="dailyRecord(before_breakfast,after_breakfast,pre_lunch,post_lunch,pre_dinner,post_dinner,bed_time,at_4_am);">
+    	<span class="title"><span>DAILY RECORD</span></span>
+		<div class="form-grp">
+			<span>BEFORE BREAKFAST</span>
+			<input type="text" ng-model="before_breakfast" placeholder="Enter Value">
+		</div>		
+		<div class="form-grp">
+			<span>90 MIN AFTER BREAKFAST</span>
+			<input type="text" ng-model="after_breakfast" placeholder="Enter Value">
+		</div>		
+		<div class="form-grp">
+			<span>PRE LUNCH</span>
+			<input type="text" ng-model="pre_lunch" placeholder="Enter Value">
+		</div>		
+		<div class="form-grp">
+			<span>POST LUNCH</span>
+			<input type="text" ng-model="post_lunch" placeholder="Enter Value">
+		</div>		
+		<div class="form-grp">
+			<span>PRE DINNER</span>
+			<input type="text" ng-model="pre_dinner" placeholder="Enter Value">
+		</div>		
+		<div class="form-grp">
+			<span>POST DINNER</span>
+			<input type="text" ng-model="post_dinner" placeholder="Enter Value">
+		</div>		
+		<div class="form-grp">
+			<span>BED TIME</span>
+			<input type="text" ng-model="bed_time" placeholder="Enter Value">
+		</div>		
+		<div class="form-grp">
+			<span>AT 4 AM</span>
+			<input type="text" ng-model="at_4_am" placeholder="Enter Value">
+		</div>
+		<div class="form-grp form-btn">
+			<input type="submit" value="{{dailyBtn}}" name="" />
+		</div>
+		</form>
+    </div>
+</div>
+<style type="text/css">
+	.rootParent{
+		position: relative;overflow: auto;
+	}
+	.calendarWrapper{
+		position: fixed;
+		left:0;
+	    z-index: 9;
+	    height: 145px;
+	    width: 100%;
+	    overflow-y: hidden;
+	}
+	.listWrap{
+		overflow-x: scroll;
+	    overflow-y: hidden;
+	    width: 100%;
+	    height: auto;
+	    padding: 0px;
+	    max-width: 100%;
+	    white-space: nowrap;
+	}
+	.pagePedometer{
+		padding-top: 160px;
+	}
+	.monthLists ul{
+		text-align: center;
+	}
+</style>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

@@ -1,0 +1,35 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+<div class="content pageDiet">
+	<div class="detailTitle">Diet charts</div>
+    <div class="description">
+    	<div class="north_head clear">
+			<h2>{{zone.title}}</h2>
+			<div class="north_head_img">
+				<img ng-src="{{zone.icon}}"/>
+			</div>
+		</div>
+        <div class="table">
+            <table align="center" cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <th ng-repeat="item in zone.header"><span>{{item}}</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="row in zone.body">
+                        <td ng-repeat="col in row track by $index"><div><span>{{col}}</span></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="color"><span style="font-weight:bold;font-size:10px;">{{my_data.common_text.total}} <br/><span style="font-weight:normal;font-size:14px;">{{my_data.common_text.per_day}}({{my_data.common_text.method}})</span></span></div></td>
+                        <td><div class="color"><span><img src="images/diet_zone/3x.png"/><br>{{my_data.common_text.teaspoons}}</span></div></td>
+                        <td><div class="color"><span><img src="images/diet_zone/3x.png"/><br>{{my_data.common_text.teaspoons}}</span></div></td>
+                        <td><div class="color"><span><img src="images/diet_zone/4x.png"/><br>{{my_data.common_text.teaspoons}}</span></div></td>
+                        <td><div class="color"><span><img src="images/diet_zone/5x.png"/><br>{{my_data.common_text.teaspoons}}</span></div></td>
+                    </tr>
+                </tbody>
+            </table>
+     	</div>
+	 	<p>{{zone.description}}</p>
+   	</div>
+</div>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

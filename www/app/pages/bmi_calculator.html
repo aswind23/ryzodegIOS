@@ -1,0 +1,79 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+<div class="content pageBmiCalc disclaimer pageContent">
+
+	<div class="gender bmiBlock">
+		<div class="title">Gender</div>
+		<label>
+			<input type="radio" name="gender" value="male" />
+			<span>Male</span>
+		</label>
+		<label>
+			<input type="radio" name="gender" value="female"/>
+			<span>Female</span>
+		</label>
+	</div>
+	<div class="height bmiBlock rotator" ng-init="assignHeight();">
+		<div class="title">Height (CM)</div>
+		<div class="rotatorContainer">
+			<ul>
+				<li ng-repeat="height in heightValue">
+				<input type="radio" name="height" ng-model="getHeight" value="{{height}}" ng-click="bmiCalc('height',getHeight);"/>
+					<a href="" value="{{height}}">{{height}}</a>
+				</li>
+				
+			</ul>
+
+		</div>
+	</div>
+	<div class="weight bmiBlock rotator">
+		<div class="title">Weight (Kg)</div>
+		<div class="rotatorContainer">
+			<ul>
+				<li ng-repeat="weight in weightValue">
+				<input type="radio" name="weight" ng-model="getWeight" value="{{weight}}" ng-click="bmiCalc('weight',getWeight);"/>
+					<a href="" value="{{weight}}">{{weight}}</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	<div class="resultValue">
+		<span>BMI Value is {{bmiValue.toFixed(4)}}</span>
+	</div>
+	<!-- <div class="selectValues">
+			<div class="title">Select values</div>
+				<div class="bmiBlock rotator">
+					<div class="radioSelect">
+						<label class="radioContainer">
+							A1C
+						  <input type="radio" id="a1c" name="select-val" checked="" />
+						  <span class="checkmark"></span>
+						</label>
+
+						<label class="radioContainer">
+							eAG
+						  <input type="radio" id="eag" name="select-val" />
+						  <span class="checkmark"></span>
+						</label>
+				</div>
+				<div class="a1c" style="display: block;">	
+					<div class="enterValueContainer">
+						<span>Enter Your A1C Value</span><input type="text" name="" ng-model="A1CVal" ng-change="geteAG(A1CVal)"/>
+					</div>
+					<div class="resultValue">
+						<span>Your eAG Value is {{passeAG}}</span>
+					</div>
+				</div>
+				<div class="eag">	
+					<div class="enterValueContainer">
+						<span>Enter Your eAG Value</span><input type="text" name="" ng-model="eAGVal" ng-change="getA1c(eAGVal)"/>
+					</div>
+					<div class="resultValue">
+						<span>Your A1C Value is {{passA1c}}</span>
+					</div>
+				</div>
+			
+		</div>
+	</div> -->
+</div>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

@@ -1,0 +1,85 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+<div class="content pageNovomixYou">
+	<div class="loadingText" ng-hide="isRendered">
+        Loading...
+    </div>
+	<script type="text/ng-template" id="group-template.html">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title" style="color:#fa39c3">
+          <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+            <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+              {{heading}}
+            </span>
+          </a>
+        </h4>
+      </div>
+      <div class="panel-collapse collapse" uib-collapse="!isOpen">
+        <div class="panel-body" style="text-align: right" ng-transclude></div>
+      </div>
+    </div>
+  </script>
+    <div ng-show="isRendered">
+        <div class="image">
+            <img src="images/mynovomix_1.png" alt="">
+        </div>
+        <div class="title"><span ng-repeat="menu in my_data.menus" ng-bind-html="menu.text | unsafe" ng-if="menu.url == 'novomix_you'"></span></div>
+        <uib-accordion close-others="true">
+            <div uib-accordion-group  class="panel-default" ng-repeat="list in my_data.novomix_you">
+                <div uib-accordion-heading>
+                    <span ng-bind-html="list.title | unsafe"></span>
+                    <span class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></span>
+                </div>
+                <!--<div class="novomix_tabcontent" ng-bind-html="list.description | unsafe"></div>-->
+                <div class="novomix_tabcontent">
+                    <div ng-repeat="desc in list.description" class="tab_desc" ng-class-odd="'odd'" ng-class-even="'even'">
+                        <p ng-if="desc.tag == 'p'" ng-bind-html="desc.text | unsafe"></p>
+                        <h2 ng-if="desc.tag == 'h2'" ng-bind-html="desc.text | unsafe"></h2>
+                        <div ng-if="desc.tag == 'img'" class="image">
+                            <img ng-src="{{desc.url}}" alt="">
+                        </div>
+                        <div ng-if="desc.isSplit" class="how_split">
+                            <div class="howit_first">
+                             <div class="col">
+								<div class="howit_con" ng-repeat="item in desc.data" class="isSplit clear" ng-class-odd="'odd'" ng-class-even="'even'">
+								<div class="how_head">
+								<h3><span>{{item.title}}</span><span class="head_icon"><img ng-src="{{item.image}}"></span></h3>
+								</div>
+								<div class="howit_incon">
+								<p ng-repeat="con in item.content">{{con}}</p>
+								</div>
+								<div ng-if="item.tag == 'img'" class="plus_image">
+								<img ng-src="{{item.url}}" alt="">
+							</div>
+							   </div>
+                             </div>
+                            </div>
+							<div class="please" ng-repeat="imgcon in desc.imgcon">
+							<p>{{imgcon.text}}</p>
+							</div>
+                        </div>
+                    </div>
+					<div ng-if="list.type == 'list'" class="how_listtype" ng-class-odd="'odd'" ng-class-even="'even'">
+						<div ng-repeat="data in list.data">
+						<div class="heading_text">
+								<span><img ng-src="{{data.image}}"></span>
+								<h3>{{data.title}}</h3>
+							</div>
+                            <ul class="blueList">
+                                <li ng-repeat="item in data.list"><span>{{item}}</span></li>
+                            </ul>
+                        </div>
+						<div class="howittab_img">
+						<img ng-src="{{list.image}}">
+						</div>
+						<div class="howittab_plz">
+						<p>{{list.con}}</p>
+						</div>
+					</div>
+                </div>
+            </div>
+        </uib-accordion>
+        <div ng-init="fireEvent()"></div>
+   	</div>
+</div>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

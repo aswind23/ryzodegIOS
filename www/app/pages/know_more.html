@@ -1,0 +1,9 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+<div class="content pageKnowmore">
+	<div class="detailTitle">{{my_data.know_more.title}}!</div>
+    <div class="description">
+    	<h1>{{my_data.know_more.heading}}</h1>
+		<p ng-repeat="data in my_data.know_more.data"><span>{{data.title}}</span> {{data.text}}</p>
+    </div>
+</div>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

@@ -1,0 +1,32 @@
+<div class="content" ng-controller="LoginController">
+	<div class="loginForm">
+		<form name="mobileForm" ng-submit="userLogin('login');">
+			<div class="logo">
+				<div class="avatarLogo">
+					<img src="images/avatar.png" />
+					<h3>{{my_data.login.title}}</h3>
+				</div>
+				<div class="field">
+					<input type="text" name="mobile" ng-model="mobileNumber" placeholder="{{my_data.login.placeholder}}" />
+					<input type="submit" name="" value="{{loginText}}" />
+				</div>
+				<div ng-if="loginError !== undefined" style="font-size:12px;color:red;text-align: center;">
+					{{loginError}}
+				</div>
+			</div>
+			<div>
+				<h5>{{my_data.login.info}} <strong>{{my_data.login.otp_label}}</strong></h5>
+			</div>
+		</form>	
+		<div class="keep_logo">
+			<!-- <img src="images/main-logo.png"/> -->
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	.rootParent{
+		position: relative;
+		height: 100%;
+		margin:0;
+	}
+</style>

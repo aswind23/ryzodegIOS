@@ -1,0 +1,54 @@
+[
+	{
+		"text" : "English",
+		"code" : "eng"
+	},
+	{
+		"text" : "हिंदी",
+		"code" : "hin"
+	},
+	{
+		"text" : "অসমীয়া",
+		"code" : "asm"
+	},
+	{
+		"text" : "বাঙালি",
+		"code" : "ben"
+	},
+	{
+		"text" : "ગુજરાતી",
+		"code" : "guj"
+	},	
+	{
+		"text" : "ಕನ್ನಡ",
+		"code" : "kan"
+	},
+	{
+		"text" : "മലയാളം",
+		"code" : "mal"
+	},
+	{
+		"text" : "मराठी",
+		"code" : "mar"
+	},
+	{
+		"text" : "ଓଡ଼ିଆ",
+		"code" : "odi"
+	},
+	{
+		"text" : "ਪੰਜਾਬੀ ਦੇ",
+		"code" : "pun"
+	},
+	{
+		"text" : "தமிழ்",
+		"code" : "tam"
+	},
+	{
+		"text" : "తెలుగు",
+		"code" : "tel"
+	},
+	{
+		"text" : "اُردُو‎",
+		"code" : "urd"
+	}
+]

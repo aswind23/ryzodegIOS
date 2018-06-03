@@ -1,0 +1,121 @@
+<div class="goalContainer">
+		<div class="goalWrap">
+		<div class="selectGoalTyp" >
+			<span>Distance (Km)</span>
+		</div>
+		<!-- <div class="goalblock goalInc"><span>-</span></div>
+		<div class="goalblock goalSet"><span>3.0<span> Km</span></span></div>
+		<div class="goalblock goalInc"><span>+</span></div> -->
+		<h-number value="Distance.num" min="0" max="500" step="1" change="onDistanceChanged()" id="Distance" style="display: block;">
+        	<input type="text" ng-model="Distance.num">
+    	</h-number>
+    	<h-number value="Steps.num" min="0" max="500" step="1" change="onStepsChanged()" id="Steps">
+        	<input type="text" ng-model="Steps.num">
+    	</h-number>
+    	<h-number value="Calories.num" min="0" max="500" step="1" change="onCaloriesChanged()" id="Calories">
+        	<input type="text" ng-model="Calories.num">
+    	</h-number>
+    	<h-number value="Time_Duration.num" min="0" max="500" step="1" change="onTime_DurationChanged()" id="Time_Duration">
+        	<input type="text" ng-model="Time_Duration.num">
+    	</h-number>
+		</div>
+	</div>
+	<div class="goalOverlay"></div>
+	<div class="goalValues">
+			<ul>
+				<li>
+					<input type="radio" name="" value="Distance (Km)" checked="" />
+					<a href="">Distance</a>
+				</li>
+				<li>
+					<input type="radio" name="" value="Steps ()" />
+					<a href="">Steps</a>
+				</li>
+				<li>
+					<input type="radio" name="" value="Calories ()"/>
+					<a href="">Calories</a>
+				</li>
+				<li>
+					<input type="radio" name="" value="Time/Duration ()" />
+					<a href="">Time/Duration</a>
+				</li>
+			</ul>
+		</div>
+	 <!-- <div id="map" ng-class="{'cover' : startPedo}">
+       <map zoom="23" center="{{getPosition[0].lat}},{{getPosition[0].lng}}" style="display:block;height:100%">
+			<custom-marker position="{{getPosition[getPosition.length-1].lat}},{{getPosition[getPosition.length-1].lng}}">
+				<img src="images/navigator.png" />
+			</custom-marker>
+		    <shape ng-if="getPosition.length > 1" name="polyline" 
+		      path="{{waypoints}}"
+		      geodesic="true"
+		      stroke-color="#FF0000"
+		      stroke-opacity="1.0"
+		      stroke-weight="2"></shape>
+  		 </map>
+	</div> -->
+	<div class="pedoContnt">
+	<div class="result">
+		<div class="dataView" ng-hide="hideResult">
+			<div class="pedometerResult">
+				<span>steps</span>
+				<span>{{steps.toFixed(0)}}</span>
+			</div>
+			<div class="pedometerResult">
+				<span>Distance</span>
+				<span>{{distance.toFixed(2)}}</span>
+			</div>
+			<div class="pedometerResult">
+				<span>Calories</span>
+				<span>{{calories.toFixed(2)}}</span>
+			</div>
+		</div>
+		<div class="pedoButtons" ng-hide="hideResult">
+		<div class="pedometerCtrl"  ng-hide="hideStart">
+			<a href="" ng-click="startPedometer()">Start</a>
+		</div>
+		<div class="slideToPause" ng-click="pausePedometer()" ng-if="showPause == true">
+			<a href="" class="slideClick">CLICK TO PAUSE</a>
+		</div>
+		<div class="resumeFinish clear" ng-if="showResume == true">
+			<div>
+				<a href="#" ng-click="resumePedometer()">RESUME</a>
+			</div>
+			<div>
+				<a href="#" ng-click="finishPedometer()">FINISH</a>
+			</div>
+		</div>
+		</div>	
+		<div class="pedometerSummary" ng-if="showData">
+			<span class="date">{{createdDate}}</span>
+			<span class="time">{{startedTime}} - {{endedTime}}</span>
+			<span class="total">Total: <span>{{distance.toFixed(2)}}</span>Km</span>
+			<div class="summaryDetails">
+				<span>Duration <span><i>{{duration}}</i>mins</span></span>
+				<span>Calories <span><i>{{calories.toFixed(2)}}</i>Kcal</span></span>
+				<span>Steps <span><i>{{steps}}</i></span></span>
+			</div>
+			<div class="finishedGroup">
+				<a href="" ng-click="startNew();">Start</a>
+				<a href="" ng-click="pedoReports();">Reports</a>
+			</div>
+		</div>	
+	</div>
+</div>
+<div class="weightPopup" ng-if ="!$storage.userWeight">
+	<div>
+		<div class="getWeight">
+			<input type="number" name="" ng-model="getPedoWeight" placeholder="Enter Your Weight" maxlength="5" />
+			<button type="button" value="" ng-click="storeWeight(getPedoWeight);">Submit</button>
+		</div>
+	</div>
+</div> 
+<div class="checkPedo" ng-if ="notWalking">
+	<div>
+		<div class="pedoStopInfo">
+			<h3>Seems Like you are walking !</h3>
+			<button type="button" value="" ng-click="startAgainPedo();">Start</button>
+			<button type="button" value="" ng-click="closePopPedo();">Cancel</button>
+		</div>
+	</div>
+</div>

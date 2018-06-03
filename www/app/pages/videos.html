@@ -1,0 +1,8 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+<div class="content pageVideo">
+	<video preload controls poster="images/NovoMix_FlexPen.png" webkit-playsinline playsinline autoplay>
+    	<source ng-src="{{video}}" type="video/mp4" />
+        <img src="images/NovoMix_FlexPen.png">
+ 	</video>
+</div>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

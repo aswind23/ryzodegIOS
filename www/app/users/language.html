@@ -1,0 +1,16 @@
+<div class="splashWrap" ng-init="checkLanguage();">
+	<form class="chooseLanguage" name="chooseLanguage" ng-submit="setlanguage(lang)">
+    	<div class="row">
+            <label>
+                <span>Choose Language :</span>
+                <select ng-required="true" ng-model="lang">
+                	<option value="">-Select Language-</option>
+                    <option ng-repeat="language in languages" ng-value="language.code" ng-selected="language.code == 'eng'">{{language.text}}</option>
+                </select>
+            </label>
+      	</div>
+        <div class="row">
+        	<input type="submit" value="{{submitTextLang}}">
+        </div>
+    </form>
+</div>

@@ -1,0 +1,70 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+	<div class="calendarWrapper" ng-init="getPedoCurrentMonth();">
+	<div class="monthLists">
+		<div class="listWrap">
+			<ul>
+				<li ng-repeat="month in monthNames" ng-class="{active : activeMonth === month}">
+					<a href="" value="{{month}}" ng-click="viewpedoDates($index,month);">{{month}}</a>
+				</li>
+			</ul>
+		</div>	
+	</div>
+	<div class="dateLists" ng-if="noDate">
+		<div class="listWrap">
+			<ul>
+				<li ng-repeat="getdate in getView track by getdate.date" ng-class="{active : activeDate === getdate.date}" ng-click="selectedPedoDate($index,getdate)">
+					<a href="">
+						<label class="dayhead">{{getdate.day}}</label>
+						<label class="date">{{getdate.date}}</label>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="content pagePedometer pageContent pedoReport">
+   <div id="map">
+	     <map zoom="23" center="{{getExactLocation.origin}}" style="display:block;height:100%">
+	     	<marker position="{{getExactLocation.origin}}"></marker>
+			<marker position="{{getExactLocation.destination}}" ng-if="getExactLocation.destination != ''"></marker>
+		    <shape ng-if="getExactLocation.wayPoint.length > 1" name="polyline" 
+		      path="{{getExactLocation.wayPoint}}"
+		      geodesic="true"
+		      stroke-color="#FF0000"
+		      stroke-opacity="1.0"
+		      stroke-weight="2"></shape>
+  		 </map>
+   </div>
+   <div class="pedometerSummary">
+		<span class="date">{{creationDate}}</span>
+		<span class="time">{{startTime}} - {{endTime}}</span>
+		<span class="total">Total: <span>{{actDistance.toFixed(3)}}</span>Km</span>
+		<div class="summaryDetails">
+			<span>Duration <span><i>{{actDuration}}</i>mins</span></span>
+			<span>Calories <span><i>{{actCalories.toFixed(4)}}</i>Kcal</span></span>
+			<span>Steps <span><i>{{actSteps}}</i></span></span>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	.rootParent{
+		position: relative;overflow: auto;
+	}
+	.pagePedometer{
+		padding: 0;
+	    position: absolute;
+	    top: 0px;
+	    left: 0; 
+	    width: 100%;
+	    padding-top: 120px;
+	}
+	.pedoReport #map{
+		padding-top: 0;
+	}
+	.calendarWrapper{
+		position: relative;
+    	z-index: 1;
+	}
+
+</style>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

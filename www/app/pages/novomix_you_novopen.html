@@ -1,0 +1,47 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+<div class="content pageTutorial">
+<div class="tutorialTitle" ng-repeat="tutorialTitle in my_data.how_to_use_novopen">
+	<h1><span ng-bind-html="tutorialTitle.title | unsafe"></span></h1>
+</div>
+<div class="tutorial_con" ng-repeat="tutorial in my_data.how_to_use_novopen">
+	<div class="tut_novopen_first" ng-repeat="tutorialdata in tutorial.data" ng-if="tutorialdata.type == 'list'">
+	<ul>
+		<li ng-repeat="datang in tutorialdata.con">
+		<div class="wrap">
+            	<div class="title"><span class="nos">{{$index+1}}</span>{{datang.title}}</div>
+                <div class="tutorialIn clear">
+                	<div class="col">
+					<h4>{{datang.listhead}}</h4>
+                    	<ul type="a">
+                        	<li ng-repeat="list in datang.content"><p ng-bind-html="list | unsafe"></p></li>
+                        </ul>
+						<p class="tut_para">{{datang.text}}</p>
+                    </div>
+                    <div class="col image"><img ng-src="{{datang.image}}" alt=""></div>
+                </div>
+            </div>
+		</li>
+	</ul>
+	</div>
+	
+	<ul class="tut_novopen">
+    	<li ng-repeat="tutorialdata in tutorial.data" ng-class-odd="'odd'" ng-class-even="'even'">
+        	<div class="wrap">
+            	<div class="title"><span class="nos">{{$index+1}}</span>{{tutorialdata.title}}</div>
+                <div class="tutorialIn clear">
+                	<div class="col">
+					<h4>{{tutorialdata.listhead}}</h4>
+                    	<ul type="a">
+                        	<li ng-repeat="list in tutorialdata.content"><p ng-bind-html="list | unsafe"></p></li>
+                        </ul>
+						<p class="tut_para">{{tutorialdata.text}}</p>
+                    </div>
+                    <div class="col image"><img ng-src="{{tutorialdata.image}}" alt=""></div>
+                </div>
+            </div>
+	</li>
+	</div>
+    </ul>
+</div>
+</div>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

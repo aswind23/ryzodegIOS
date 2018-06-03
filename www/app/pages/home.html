@@ -1,0 +1,50 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+<div class="content pageHome">
+	<ul>
+    	<li ng-repeat="tutorial in my_data.tutorials" ng-class-odd="'odd'" ng-class-even="'even'">
+        	<div class="wrap" style="background-image:url({{tutorial.img}})">
+            	<div class="text">
+                	<h2 ng-bind-html="tutorial.title | unsafe"></h2>
+                    <p>{{tutorial.text}}</p>
+                </div>
+                <a ng-if="tutorial.video" href="{{tutorial.video}}" class="playVideo"></a>
+                <a ng-if="tutorial.url" href="{{tutorial.url}}"></a>
+            </div>
+        </li>
+    	<!--<li class="odd">
+        	<div class="wrap">
+            	<div class="text">
+                	<h2>NovoMix &trade; FlexPen &reg;</h2>
+                    <p>Video Tutorial</p>
+                </div>
+                <a href="#videos/flex_pen_video_ipad_2" class="playVideo"></a>
+            </div>
+        </li>
+        <li class="even">
+        	<div class="wrap">
+            	<div class="text">
+                	<h2>NovoPen &reg; 4</h2>
+                    <p>Video Tutorial</p>
+                </div>
+                <a href="#videos/novopen_instruction_video_5" class="playVideo"></a>
+            </div>
+        </li>
+        <li class="odd">
+        	<div class="wrap">
+            	<div class="text">
+                	<h2>NovoMix &trade; FlexPen &reg;</h2>
+                    <p>Pictorial Tutorial</p>
+                </div>
+            </div>
+        </li>
+        <li class="even">
+        	<div class="wrap">
+            	<div class="text">
+                	<h2>NovoMix &trade; FlexPen &reg;</h2>
+                    <p>Pictorial Tutorial</p>
+                </div>
+            </div>
+        </li>-->
+    </ul>
+</div>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

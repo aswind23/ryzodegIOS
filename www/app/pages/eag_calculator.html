@@ -1,0 +1,39 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+<div class="content pageBmiCalc disclaimer pageContent">
+	<div class="selectValues">
+			<div class="title">Select values</div>
+				<div class="bmiBlock rotator">
+					<div class="radioSelect">
+						<label class="radioContainer">
+							A1C
+						  <input type="radio" id="a1c" name="select-val" checked="" />
+						  <span class="checkmark"></span>
+						</label>
+
+						<label class="radioContainer">
+							eAG
+						  <input type="radio" id="eag" name="select-val" />
+						  <span class="checkmark"></span>
+						</label>
+				</div>
+				<div class="a1c" style="display: block;">	
+					<div class="enterValueContainer">
+						<span>Enter Your A1C Value</span><input type="text" name="" ng-model="A1CVal" ng-change="geteAG(A1CVal)"/>
+					</div>
+					<div class="resultValue">
+						<span>Your eAG Value is {{passeAG}}</span>
+					</div>
+				</div>
+				<div class="eag">	
+					<div class="enterValueContainer">
+						<span>Enter Your eAG Value</span><input type="text" name="" ng-model="eAGVal" ng-change="getA1c(eAGVal)"/>
+					</div>
+					<div class="resultValue">
+						<span>Your A1C Value is {{passA1c}}</span>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</div>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

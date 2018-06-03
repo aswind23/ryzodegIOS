@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title ng-bind="title + ' | Novomix'"></title>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link href="css/app.css" rel="stylesheet">
+  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+</head>
+<body ng-class="{'showMenu':showMenu}">
+<route-loading-indicator></route-loading-indicator>
+<div ng-view autoscroll="true" class="ng-cloak rootParent" ng-class="pageName"></div>
+<my-menu ng-controller="pageController"></my-menu>
+<script src="cordova.js"></script>
+<script src="js/libs.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places&key=AIzaSyBh3YLJk23y05etc5kjMB-mBi6fuPPpph8" async defer></script>
+</body>
+</html>

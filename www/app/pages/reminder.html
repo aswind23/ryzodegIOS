@@ -1,0 +1,82 @@
+<header ng-controller="pageController" ng-include="template.header"></header>
+<div class="reminderSpan"><a id="reminderBtn" href="" ng-click="createAlarm();">+</a></div>
+<div class="content pagePedometer disclaimer pageContent" ng-init="reminderScreen();">
+    <div class="alarmList" ng-init="viewAlarms();">
+		<div class="alarmSingle clear" ng-repeat="reminder in getremind track by $index">
+			<div class="alarmDetail">
+				<span class="aTitle">{{my_data.reminder.label}} {{$index+1}}</span>
+				<span class="aTime">
+					{{reminder.alarm.alarmTime | date:'shortTime'}}
+				</span>
+			</div>
+			<div class="alarmUI">
+				<span class="aEdit" ng-click="editAlarm(reminder,$index)"></span>
+				<span class="aDelete" ng-click="deleteAlarm(getremind,reminder)"></span>
+			</div>
+		</div>		
+    </div>
+    <div class="daySelOverlay" ng-if="showDaySelection == true" ng-click="closeDay();"></div>
+    <div class="daySelectionContainer" ng-if="showDaySelection == true">
+    <div class="daySelection">
+    	<form class="reminderForm" name="reminderForm" ng-submit="alarmSet(formFor,mytime);">
+	    	<input type="hidden" value="{{formFor}}" ng-model="formFor" />
+	    	<input type="hidden" value="{{clickedItem}}" ng-model="clickedItem" />
+	    	<div class="tabs">
+	    		<ul class="clear">
+	    			<li id="time" class="active"><a href="">{{my_data.reminder.time}}</a></li>
+	    			<li id="days"><a href="">{{my_data.reminder.days}}</a></li>
+	    		</ul>
+	    	</div>
+	    	<div class="tab_container">
+	    		<div class="time active">
+	    			<div uib-timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></div>
+	    			<!-- <button type="button" class="btn btn-info" ng-click="toggleMode()">12H / 24H</button> -->
+	    			<button type="button" class="moveDate">Submit</button>
+	    		</div>
+		    	<div class="days">
+			    	<div class="day" ng-repeat="day in daysList track by $index">
+			    		<span>{{my_data.reminder.weekdays[$index]}}</span>
+			    		<span>
+			    			<label class="container">
+							  <input type="checkbox" 
+							  value="{{day.name}}" 
+							  tabindex="{{$index}}" 
+							  ng-checked="{{day.checked}}" 
+							  ng-click=makeTrue(day);>
+							  <span class="checkmark"></span>
+							 </label>
+						</span>
+			    	</div>    	
+			    	 <div class="reminderSubmit">
+			    		<input type="submit" name="remindSubmit" value="{{remindSubmitBtn}}"/>
+			    	</div>
+		    	</div>
+	    	</div>
+   		</form>
+    </div>
+</div>
+<div class="innerAlarm" ng-if="viewAlarms == true">
+    	<div>
+    		<div class="alarmBox">
+    			<a href="" class="closeAlarm" ng-click="closeAlarmPop();">X</a>
+    			<div>
+    				<input type="hidden" name="" id="passId" ng-model="passModel" value="" />
+    				<h2>Hi!</h2>
+    				<p>Its your Ryzodeg Time</p>
+    				<input type="button" name="" value="Close" ng-click="closeAlarmPop();"/>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</div>
+<style type="text/css">
+	@media only screen and (max-width:500px){
+		header .title span {
+	    	left: -20px;
+		}
+		.reminderSpan a{
+			right: -60px;
+		}
+	}
+</style>
+<footer ng-controller="pageController" ng-include="template.footer"></footer>

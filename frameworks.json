@@ -1,0 +1,6 @@
+{
+    "libz.tbd": 1,
+    "CoreMotion.framework": 2,
+    "CoreLocation.framework": 2,
+    "UserNotifications.framework": 1
+}

@@ -1,0 +1,25 @@
+<div class="splashWrap">
+    <div class="logo">
+        <img ng-src="images/new_logo.png" alt="">
+    </div>
+    <div class="welcome">
+        <div class="welcome_con" ng-bind-html="my_data.home.welcome_title | unsafe"></div>
+		<div class="welcom_img"><img ng-src="{{my_data.home.welcome_img}}" alt=""></div>
+    </div>
+	<form class="activationForm" name="activationForm" ng-submit="activate(code)">
+    	<div class="wrap">
+            <div class="row">
+                <label>
+                    <div class="label">{{my_data.home.activation}}</div>
+                    <div class="field">
+                        <input type="text" placeholder="{{my_data.home.placeholder}}" name="code" ng-model="code" autocomplete="off" autocorrect="off" autocapitalize="none">
+                    </div>
+                </label>
+            </div>
+            <div class="error" ng-if="formErr">Invalid Code</div>
+            <div class="row submit">
+                <input type="submit" value="{{my_data.home.login}}">
+            </div>
+      	</div>
+    </form>
+</div>

@@ -1,0 +1,707 @@
+{
+	"logo" : "images/logos/eng.png",
+	"tutorials" : [
+		{
+			"title" : "Ryzodeg&trade;</sup>",
+			"text" : "Video Tutorial",
+			"video" : "#home_videos/flex_pen_video_ipad_2",
+			"img" : "images/home/novomix_flexpen.png"
+		},
+		{
+			"title" : "NovoPen<sup>&reg;</sup> 4",
+			"text" : "Video Tutorial",
+			"video" : "#home_videos/novopen_instruction_video_5",
+			"img" : "images/home/ryzodeg_novopen.png"
+		},
+		{
+			"title" : "Ryzodeg&trade;</sup>",
+			"text" : "Pictorial Guide",				
+			"img" : "images/home/menu_head.png",
+			"url" : "#home_flexpen"
+		},
+		{
+			"title" : "NovoPen<sup>&reg;</sup> 4",
+			"text" : "Pictorial Guide",				
+			"img" : "images/home/novopen_pictorial.jpg",
+			"url" : "#home_novopen"
+		}
+	],
+	"home" : {
+		"welcome_title" : "WELCOME TO YOUR PERSONAL GUIDE",
+		"welcome_img"   : "images/logo_home.png",
+		"activation" : "Enter your activation code to continue",
+		"placeholder" : "Enter your code",
+		"login" : "Login"
+	},
+	"menus" : [
+		{
+			"text" : "Home",
+			"url" : "home"
+		},
+		{
+			"text" : "Ryzodeg™ & You",
+			"url" : "novomix_you"
+		},
+		{
+			"text" : "Counseling",
+			"url" : "counselling"
+		},
+		{
+			"text" : "Know More!",
+			"url" : "know_more"
+		}
+	],
+	"how_to_use_novomix_flexpen" : [
+	{
+	"title" : "Ryzodeg™ FlexTouch™ ನ್ನು ಹೇಗೆ ಉಪಯೋಗಿಸುವುದು",	
+	"data" : [
+				
+				{
+				"heading" : "Ryzodeg™ FlexTouch™ ಪೆನ್ ಸಿದ್ಧಪಡಿಸುವುದು",
+				"title" : "ಪೆನ್ ಪರೀಕ್ಷಿಸಿ",
+				"content" : [
+					"ನೀವು ಸರಿಯಾದ ವಿಧದ ಇನ್ಸುಲಿನ್ ಹೊಂದಿದ್ದೀರೆಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಲೇಬಲ್ ಓದಿ. ಪೆನ್ ಕ್ಯಾಪ್ ಎಳೆಯಿರಿ. ಇನ್ಸುಲಿನ್ ಸ್ಪಷ್ಟವಾಗಿ ಬಣ್ಣರಹಿತವಾಗಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ "
+				],
+				"image" : "images/tutorial/flexpen/flex_img1.png"
+				},
+				{
+					"title" : "ಹೊಸ ಸೂಜಿ ಸೇರಿಸಿ",
+					"content" : [
+						"ಪೇಪರ್ ಟ್ಯಾಬ್ ಹರಿಯಿರಿ. ಸೂಜಿಯನ್ನು ನೇರವಾಗಿ ಪೆನ್‌ನೊಳಗೆ ತಳ್ಳಿ.ಅದು ಬಿಗಿಯಾಗುವವರೆಗೆ ತಿರುಗಿಸಿ. ಸೂಜಿಯ ಮೇಲಿನ ಎರಡು ಕ್ಯಾಪ್‌ಗಳನ್ನು ಎಳೆಯಿರಿ"
+					],
+					"image" : "images/tutorial/flexpen/flex_img2.png"
+				},
+				{
+					"title" : "ಪೆನ್ ಪ್ರೈಮ್ ಮಾಡಿ",
+					"content" : [
+						"2 ಯುನಿಟ್ ಆಯ್ಕೆಮಾಡಲು ಡೋಸ್ ಸೆಲೆಕ್ಟರ್ ತಿರುಗಿಸಿ. ಡೋಸ್ ಬಟನ್ ಒತ್ತಿ ಹಿಡಿಯಿರಿ. ಡ್ರಾಪ್ ಕಂಡುಬರುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ"
+					],
+					"image" : "images/tutorial/flexpen/flex_img3.png"
+				},
+				{
+					"heading" : "ನಿಮ್ಮ ಇಂಜೆಕ್ಷನ್ ನೀಡಿ",
+					"title" : "ನಿಮ್ಮ ಪ್ರಮಾಣ ಆಯ್ಕೆಮಾಡಿ",
+					"content" : [
+						"ನೀವು ಚುಚ್ಚಿಕೊಳ್ಳಬೇಕಾದ ಪ್ರಮಾಣವನ್ನು ಆಯ್ಕೆಮಾಡಲು ಡೋಸ್ ಸೆಲೆಕ್ಟರ್ ತಿರುಗಿಸಿ."
+					],
+					"image": "images/tutorial/flexpen/flex_img4.png"
+				},
+				{	
+					"title" : "ನಿಮ್ಮ ಇನ್ಸೂಲಿನ್ ಪ್ರಮಾಣ ಚುಚ್ಚಿಕೊಳ್ಳಿ",
+					"content" : [
+						"ಇನ್ಸೂಲಿನ್ ಪೆನ್ ಅನ್ನು ಚುಚ್ಚಿಕೊಂಡು, ಡೋಸ್ ಬಟನ್ ಒತ್ತಿ ಹಿಡಿಯಿರಿ.ಡೋಸ್ ಕೌಂಟರ್ 0 ತಲುಪಿದ ನಂತರ, ಸೂಜಿಯನ್ನು ಸುಮಾರು 6 ಸೆಕೆಂಡ್‌ಗಳವರೆಗೆ ಚರ್ಮದ ಅಡಿಯಲ್ಲಿ ಬಿಡಿ.ನಿಮ್ಮ ಡೋಸ್ ಪೂರ್ಣವಾಗಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ನಿಧಾನವಾಗಿ 6 ರವರೆಗೆ ಎಣಿಸಿ ನಂತರ ಪೆನ್ ಅನ್ನು ಹೊರ ತೆಗೆಯಿರಿ."
+					],
+					"image" : "images/tutorial/flexpen/flex_img5.png"
+				},
+				{
+					"title" : "ಸೂಜಿಯನ್ನು ತೆಗೆಯಿರಿ",
+					"content" : [
+						"ಸೂಜಿಯ ತುದಿಯನ್ನು ಚಪ್ಪಟೆ ಮೇಲ್ಮೈನಲ್ಲಿ ಹೊರಭಾಗದ ಸೂಜಿಯೊಳಗೆ ಸೇರಿಸಿ.ಸೂಜಿ ಮುಚ್ಚಿಕೊಂಡ ನಂತರ, ಎಚ್ಚರಿಕೆಯಿಂದ ಹೊರ ಸೂಜಿಯ ಕ್ಯಾಪ್ ಸಂಪೂರ್ಣವಾಗಿ ತಳ್ಳಿ.ಸೂಜಿ ಸ್ಕ್ರೂನಿಂದ ಬಿಡಿಸಿ ಅದನ್ನು ವಿಲೇವಾರಿ ಮಾಡಿ.ಪೆನ್ ಕ್ಯಾಪ್ ಮತ್ತೆ ಸೇರಿಸಿ."
+					],
+					"image" : "images/tutorial/flexpen/flex_img6.png"
+				}
+			]
+	}
+ ],
+ "how_to_use_novopen" : [
+		{
+		"title" : "NovoPen® 4ನ್ನು ಹೇಗೆ ಉಪಯೋಗಿಸುವುದು",
+		"data" : [
+		{
+			"type" : "list",
+			"con" : [
+			{
+					"title" : "ನಿಮ್ಮ ಪೆನ್‌ನ್ನು ತಯಾರು ಮಾಡಿ ",
+					"content" : [
+						"ಪೆನ್ನಿನ ಕ್ಯಾಪ್‌ನ್ನು ತೆಗೆಯಿರಿ.",
+						"ಕಾರ್ಟರಿಜ್ ಹೋಲ್ಡರ್‌ನ್ನು ತಿರುಗಿಸಿ ಹೊರತೆಗೆಯಿರಿ.",
+						"ಪಿಸ್ಟನ್‌ನ ಸಲಾಕೆಯು ನಿಮ್ಮ ಪೆನ್ನಿನಿಂದ ಹೊರಗೆ ಬರಬಹುದು. ಹಾಗಾದಲ್ಲಿ, ಅದು ನಿಲ್ಲುವವರೆಗೆ ಅದನ್ನು ಒಳಗೆ ನೂಕಿ"
+					],
+					"image" : "images/tutorial/novopen/flex_img7.png"
+			},
+			{
+					"content" : [
+						"ಒಂದು ಹೊಸ ಇನ್‌ಸುಲಿನ್ ಕಾರ್ಟರಿಜ್‌ನ್ನು ತೆಗೆದುಕೊಂಡು ಅದನ್ನು ಈ ಕೆಳಗೆ ತಿಳಿಸಿದವುಗಳಿಗಾಗಿ ಪರೀಕ್ಷಿಸಿ: <br> - ಅದು ಹೇಗಿರಬೇಕೋ ಹಾಗೆ ಕಾಣುವ, ಸರಿಯಾದ ಇನ್‌ಸುಲಿನ್‌ನ್ನು ಹೊಂದಿದೆ ಎಂದು.<br> - ಅದರಲ್ಲಿ ಯಾವುದೇ ಬಿರುಕುಗಳು ಅಥವಾ ಹಾನಿ ಇಲ್ಲವೆಂದು."
+					],
+					"image" : "images/tutorial/novopen/flex_img8.png"
+			}
+		  ]
+		},
+		{
+			"title" : "ಕಾರ್ಟರಿಜ್‌ನ್ನು ಒಳಸೇರಿಸಿ",
+			"content" : [
+				"ಥ್ರೆಡ್‌ಗಳಿರುವ ತುದಿ ಮೊದಲು ಒಳಹೋಗುವಂತೆ ಕಾರ್ಟರಿಜ್‌ನ್ನು ಕಾರ್ಟರಿಜ್ ಹೋಲ್ಡರ್‌ನ ಒಳಗೆ ಜಾರಿಸಿ.",
+				"ಕಾರ್ಟರಿಜ್ ಹೋಲ್ಡರ್‌ನ್ನು ತಿರುಗಿಸಿ ಒಳಸೇರಿಸಿ."
+			],
+			"image" : "images/tutorial/novopen/flex_img9.png"
+		},
+		{
+			"title" : "ಹೊಸ ಸೂಜಿಯನ್ನು ಸೇರಿಸಿ",
+			"content" : [
+				"ಹೊಸ ಸೂಜಿಯನ್ನು ತೆಗೆದುಕೊಂಡು, ಅದರ ಕಾಗದದ ಮುಚ್ಚಳಿಕೆಯನ್ನು ಹರಿದು ತೆಗೆಯಿರಿ.",
+				"ಸೂಜಿಯನ್ನು ಪೆನ್ನಿನ ಮೇಲೆ ನೇರವಾಗಿ ಒತ್ತಿ. ಅದು ಬಿಗಿಯಾಗಿ ಕೂರುವವರೆಗೆ ಅದನ್ನು ತಿರುಗಿಸಿ.",
+				"ಸೂಜಿಯ ಹೊರಕ್ಯಾಪ್‌ನ್ನು ಎಳೆದು ತೆಗೆದು, ಅದನ್ನು ಪಕ್ಕಕ್ಕಿಡಿ.",
+				"ಸೂಜಿಯ ಒಳಕ್ಯಾಪ್‌ನ್ನು ಎಳೆದು ತೆಗೆದು, ಅದನ್ನು ಬಿಸಾಕಿ."
+			],
+			"image" : "images/tutorial/novopen/flex_img10.png"
+		},
+		{
+			"title" : "ಇನ್‌ಸುಲಿನ್ ಹರಿವನ್ನು ಪರೀಕ್ಷಿಸಿ",
+			"content" : [
+				"ನೀವು ಇಂಜೆಕ್ಟ್ ಮಾಡುವ ಮೊದಲು ಹರಿವನ್ನುಯಾವಾಗಲೂ ಪರೀಕ್ಷಿಸಿ. ಸೂಜಿಯ ಮೊನೆಯಿಂದ ಇನ್‌ಸುಲಿನ್ ಹೊರಚಿಮ್ಮುವವರೆಗೆ ಪರೀಕ್ಷಿಸುತ್ತಲೇ ಇರಿ. ಯಾವುದೇ ಅಂತರ ಹಾಗೂ ನೀರ್ಗುಳ್ಳೆಗಳು ತೆಗೆಯಲ್ಪಟ್ಟಿರುವುದನ್ನು ಹಾಗೂ ಸೂಜಿಯ ಮೂಲಕ ಇನ್‌ಸುಲಿನ್ ಹರಿಯುತ್ತಿರುವುದನ್ನುಇದು ಖಚಿತಪಡಿಸುತ್ತದೆ.",
+				"2 ಯುನಿಟ್‌ಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ, ಡೋಸ್‌ಕೌಂಟರ್ '0' ಯನ್ನುತೋರಿಸುವವರೆಗೆ ಡೋಸ್‌ ಬಟನ್‌ನ್ನು ಒತ್ತಿ.",
+				"ಇನ್‌ಸುಲಿನ್ ಕಾಣಿಸಿಕೊಳ್ಳದಿದ್ದಲ್ಲಿ, ಇನ್‌ಸುಲಿನ್ ಹರಿವಿನ ಪರೀಕ್ಷೆಯನ್ನು ಪುನರಾವರ್ತಿಸಿ. ಇನ್‌ಸುಲಿನ್ ಹೊರಚಿಮ್ಮುವುದನ್ನು ನೀವು ನೋಡಿದಾಗ ಇನ್‌ಸುಲಿನ್ ಹರಿವಿನ ಪರೀಕ್ಷೆ ಸಂಪೂರ್ಣಗೊಂಡಂತಾಗುತ್ತದೆ."
+			],
+			"image" : "images/tutorial/novopen/flex_img11.png"
+		},
+		{
+			"title" : "ನಿಮ್ಮ ಡೋಸ್‌ನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ",
+			"content" : [
+				"ಡೋಸ್ ಬಟನ್ ಈಗಾಗಲೇ ಹೊರಗಿರದಿದ್ದಲ್ಲಿ, ಅದನ್ನು ಹೊರಕ್ಕೆಳೆಯಿರಿ.",
+				"ನೀವು ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು ಡೋಸ್‌ ಕೌಂಟರ್ '0' ಯನ್ನುತೋರಿಸುತ್ತಿದೆ ಎಂಬುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.",
+				"ನಿಮಗೆ ಅಗತ್ಯವಿರುವ ಡೋಸ್‌ನ್ನುಆಯ್ಕೆ ಮಾಡಲುಡೋಸ್ ಬಟನ್‌ನ್ನು ತಿರುಗಿಸಿ. ನೀವು ಅದನ್ನು ಮುಂದೆ ಅಥವಾ ಹಿಂದೆ ತಿರುಗಿಸಬಹುದು."
+			],
+			"image" : "images/tutorial/novopen/flex_img12.png"
+		},
+		{
+			"title" : "ನಿಮ್ಮ ಡೋಸ್‌ನ್ನು ಇಂಜೆಕ್ಟ್ ಮಾಡಿ ",
+			"content" : [
+				"ಸೂಜಿಯನ್ನು ನಿಮ್ಮ ತ್ವಚೆಯ ಒಳಸೇರಿಸಿ, ಡೋಸ್‌ಕೌಂಟರ್ '0' ಯನ್ನು ತೋರಿಸುವವರೆಗೆ ಡೋಸ್ ಬಟನ್‌ನ್ನುಒತ್ತಿ.",
+				"ನಂತರ ತಡೆದು, ನಿಮ್ಮತ್ವಚೆಯಿಂದ ಸೂಜಿಯನ್ನು ಹೊರತೆಗೆಯುವದಕ್ಕೂ ಮೊದಲುನಿಧಾನವಾಗಿ 6 ರವರೆಗೆ ಎಣಿಸಿ.",
+				"ಸೂಜಿಯನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಹೊರತೆಗೆದು ಬಿಸಾಕಿರಿ. ಪೆನ್ನಿನ ಕ್ಯಾಪ್‌ನ್ನು ಹಾಕಿರಿ. ನಿಮ್ಮ ಪೆನ್ನಿಗೆ ಸೂಜಿಯನ್ನು ಸೇರಿಸಿಯೇ ಇಡಬೇಡಿ."
+			],
+			"image" : "images/tutorial/novopen/flex_img13.png"
+		}
+	  ]
+	 }
+	],
+	"novomix_you" : [
+		{
+			"title": "What is Ryzodeg™ and how does it work?",
+			"description" : [
+				{
+					"tag" : "p",
+					"text" : "Ryzodeg™ is an insulin designed to work similarly to the way your body works when it releases its own natural insulin to reduce your blood sugar levels. This is important throughout the day, including after main meals, when your blood sugar levels are higher."
+				},
+				{
+					"tag" : "h2",
+					"text" : "Ryzodeg™ is a combination of:"
+				},
+				{
+					"isSplit" : true,
+					"data" : [
+					
+						{
+							"title" : "An insulin for the entire day (24 hours):",
+							"image" : "images/novomix_you/ryz_icon.png",
+							"content" : [
+									"Helps your body control your blood sugar levels throughout the day and night"
+							]
+						},
+						{
+							"tag" : "img",
+							"url" : "images/plus.png"
+						},
+						{
+							"title" : "An insulin for your meal(s):",
+							"image" : "images/novomix_you/ryz_icon1.png",
+							"content" : [
+									"Covers your blood sugar levels after the meal(s) it was taken with"
+							]
+						}
+					],
+					"imgcon" : [
+					{
+							
+							"text" : "Please read patient information leaflet for additional information."
+						}
+					]
+				},
+				{
+					"tag" : "img",
+					"url" : "images/novomix_you/how_works.png"
+				}					
+			]
+		},
+		{
+			"title" : "Where to inject Ryzodeg™?",
+			"type"  : "list",
+			"data" : [
+					{	
+						"list" : [
+								"The best places to inject are the front of your waist  (abdomen), upper arms, or the front of your thighs (see diagram below)",
+								"Ryzodeg™ is given as an injection under the skin. Do not inject into a vein or muscle (Tip: Pinch the skin at the injection site to avoid injecting into a vein or muscle)",
+								"Each day, it is recommended to change the site on your body where you inject"
+							]
+						}
+		
+			],
+			"image" : "images/novomix_you/how_new.png",
+			"con"   : "Please read patient information leaflet for additional information."
+		},
+		{
+			"title" : "How to store Ryzodeg™?",
+			"description" : [
+				{
+					"tag" : "p",
+					"text" : "Keep Ryzodeg™ out of the sight and reach of children. Do not use this medication after the expiry date, which is stated on the pen label and carton, after 'EXP.'"
+				}
+			],
+			"type"  : "list",
+			"data" : [
+					{	
+						"title" : "Storage before first use:",
+						"image" : "images/novomix_you/ryz_store.png",
+						"list" : [
+								"Store in a refrigerator (2ºC to 8ºC) and keep away from the freezing element; do not freeze",
+								"Keep the cap on the pen in order to protect it from light"
+							]
+					},
+					{	
+						"title" : "Storage after first opening or if carried as a spare:",
+						"image" : "images/novomix_you/ryz_store1.png",
+						"list" : [
+								"Do not refrigerate. You can carry your Ryzodeg™ pen with you and keep it at room temperature (not above 30°C) for up to 4 weeks",
+								"Always keep the cap on the pen when you are not using it, in order to protect it from light"
+							]
+					},
+					{	
+						"title" : "Disposal of pen:",
+						"image" : "images/novomix_you/ryz_store2.png",
+						"list" : [
+								"Do not throw away any medication via waste water or household waste. Ask your pharmacist how to throw away medication you no longer use. These measures will help protect the environment",
+								"When your pen is empty and the needle has been disposed of safely, you can dispose of the pen in normal waste"
+							]
+					}
+		
+			],
+			"con"   : "Please read patient information leaflet for additional information."
+			
+		}
+	],
+	"know_more" : {
+		"title" : "Know More",
+		"heading" : "Common terms used in diabetes",
+		"data" : [
+			{
+				"title" : "Blood sugar (glucose)",
+				"text" : "The concentration of sugar in the bloodstream – the body’s main source of energy."
+			},
+			{
+				"title" : "Hyperglycaemia",
+				"text" : "High blood glucose (sugar). Occurs in diabetes when there is a lack of insulin so glucose is not removed from the bloodstream."
+			},
+			{
+				"title" : "Hypoglycaemia",
+				"text" : "Low blood glucose (sugar). Can be triggered by taking too much insulin, inadequate food intake or by participating in unusually strenuous or prolonged activity or exercise."
+			},
+			{
+				"title" : "Insulin",
+				"text" : "A hormone produced by the beta cells in the pancreas. Needed to remove sugar from the bloodstream so other cells can use it as fuel."
+			},
+			{
+				"title" : "Pancreas",
+				"text" : "An organ in the body that stretches across the back of the abdomen behind the stomach. The pancreas is where insulin and digestive enzymes are made."
+			}
+		]
+	},
+	"counselling" : [
+		{
+			"title" : "Healthy dietary tips",
+			"icon" : "healthy_dietary_tips",
+			"type" : "list",
+			"data" : [
+				{	
+					"list" : [
+						"Eat a wide variety of healthy foods.",
+						"Balance the number of calories with your activity level.",
+						"Choose foods rich in whole grains, vegetables, fruits and fat-free/low-fat milk products.",
+						"Eat lean meats, such as poultry and fish, and beans for protein.",
+						"Limit the amount of saturated fat and salt.",
+						"Cut down on added sugars.",
+						"Keep to sensible amounts of alcohol.",
+						"Have a proper breakfast every day to boost your body’s ability to burn energy.",
+						"Space your eating throughout the day and don’t skip meals."
+					]
+				}
+			],
+			"image" : "images/counselling/healthy_dietary_tips.png"
+		},
+		{
+			"title" : "Diet charts",
+			"icon" : "diet_charts",
+			"type" : "square",
+			"data" : [
+				{
+					"title" : "North",
+					"icon" : "counselling_north",
+					"url" : "counselling_diet_charts/counselling_north"
+				},
+				{
+					"title" : "South",
+					"icon" : "counselling_south",
+					"url" : "counselling_diet_charts/counselling_south"
+				},
+				{
+					"title" : "East",
+					"icon" : "counselling_east",
+					"url" : "counselling_diet_charts/counselling_east"
+				},
+				{
+					"title" : "West",
+					"icon" : "counselling_west",
+					"url" : "counselling_diet_charts/counselling_west"
+				}
+			]
+		},
+		{
+			"title" : "Myths and facts about diabetes",
+			"icon" : "myths_facts",
+			"type" : "qa",
+			"heading" : "Not everything you hear about diabetes is true. Here are some myths you may hear – and the facts you should know.",
+			"data" : [
+				{					
+					"question" : "Diabetes is a one-way street to bad health problems.",					
+					"answer" : "You can go in another direction! If you follow your diabetes care plan, you can often delay or prevent problems from diabetes."
+				},
+				{
+					"question" : "It’s your own fault that you have diabetes.",					
+					"answer" : "Diabetes isn’t anyone’s fault. There are multiple causes of diabetes. Your eating and activity choices can play a role in your blood sugar control. But it’s not the whole story."
+				},
+				{
+					"question" : "I have to take insulin. My diabetes must be really bad.",					
+					"answer" : "Not always. Everyone with type 1 diabetes needs to take insulin. Insulin can be one of the medications to help control your diabetes. With progression of diabetes, the beta cells in the pancreas make less and less insulin.  Most pills given to patients with type 2 diabetes work to help the pancreas release more insulin. However, as diabetes progresses, these pills may not work to control blood sugar levels."
+				}
+			],
+			"image" : "images/counselling/myth_fact.png"
+		},
+		{
+			"title" : "Diabetes care plan",
+			"icon" : "diabetes_care_plan",
+			"type" : "list",
+			"data" : [
+				{
+					"title" : "A typical diabetes care plan includes:",
+					"list" : [
+						"A meal plan",
+						"A physical activity plan",
+						"A plan for how and when to check your blood sugar",
+						"Your personal blood sugar goals",
+						"When to take your diabetes medicines",
+						"Other health goals (such as managing your weight and blood pressure)",
+						"A schedule for regular health checkups",
+						"Ways to deal with stress"
+					]
+				},
+				{
+					"title" : "As part of your care plan, be sure to keep track of your ABCs:",
+					"list" : [
+						"A1C",
+						"Blood pressure",
+						"Cholesterol"
+					]
+				}
+			],
+			"image" : "images/counselling/diabet_care.png"
+		},
+		{
+			"title" : "Knowing your A1C",
+			"icon" : "knowing_a1c",
+			"type" : "table",
+			"description" : "The A1C test measures your estimated average blood sugar level over the past 2 to 3 months. It’s like a 'memory' of your blood sugar levels. It shows how well you’re controlling your blood sugar levels over time. Your A1C and your blood sugar levels go up and down together. Here is how they go together:",
+			"image" : "images/counselling/knowing.png"
+		},
+		{
+			"title" : "Recognizing high blood sugar",
+			"icon" : "high_blood_sugar",
+			"type" : "high",
+			"extreme_thirst" : "Extreme Thirst",
+			"extreme_thirst_img" : "images/high_blood/extreme_thirst.png",
+			"cause" : "Too much food, too little insulin, illness or stress",
+			"onset" : "Gradual, may progress to diabetic coma",
+			"data" : [
+				{
+					"title_f" : "Frequent urination",
+					"image_f" : "images/high_blood/frequent_urination.png",
+					"title_s" : "Dry skin",
+					"image_s" : "images/high_blood/dry_skin.png",
+					"title_t" : "Hunger",
+					"image_t" : "images/high_blood/hunger.png"
+				},
+				{
+					"title_f" : "Blurred vision",
+					"image_f" : "images/high_blood/blurred_vision.png",
+					"title_s" : "Drowsiness",
+					"image_s" : "images/high_blood/drowsiness.png",
+					"title_t" : "Nausea",
+					"image_t" : "images/high_blood/nausea.png"
+				}
+			],
+			"what_can_yuo_do" : {
+				"title" : "What can you do?",
+				"data" : [
+					{
+						"title" : "Test Blood Glucose. Test Ketones",
+						"image" : "images/high_blood/test_blood.png"
+					},
+					{
+						"title" : "If over 200 mg/dl for several tests, Call your doctor",
+						"image" : "images/high_blood/call_doctor.png"
+					}
+				]
+			}
+		},
+		{
+			"title" : "Recognizing low blood sugar",
+			"icon" : "low_blood_sugar",
+			"type" : "low",
+			"shaking" : "Shaking",
+			"shaking_img" : "images/low_blood/shaking.png",
+			"fast_heatbeat" : "Fast heartbeat",
+			"fast_heatbeat_img" : "images/low_blood/fast_heatbeat.png",
+			"cause" : "Too little food, too much insulin or diabetes medicine or extra exercise",
+			"onset" : "Sudden, may progress to diabetic shock",
+			"data" : [
+				{
+					"title_f" : "Sweating",
+					"image_f" : "images/low_blood/sweating.png",
+					"title_s" : "Anxious",
+					"image_s" : "images/low_blood/anxious.png",
+					"title_t" : "Dizziness",					
+					"image_t" : "images/low_blood/dizziness.png",
+					"title_o" : "Hunger",
+					"image_o" : "images/low_blood/hunger.png"
+				},
+				{
+					"title_f" : "Impaired vision",
+					"image_f" : "images/low_blood/impaired.png",
+					"title_s" : "Weakness Fatigue",
+					"image_s" : "images/low_blood/weakness.png",
+					"title_t" : "Headache",
+					"image_t" : "images/low_blood/headache.png",
+					"title_o" : "Irritable",
+					"image_o" : "images/low_blood/irritable.png"
+				}
+			],
+			"what_can_yuo_do" : {
+				"title" : "What can you do?",
+				"data" : [
+					{
+						"title" : "Drink half glass of orange juice or skimmed milk with sugar or eat 3-4 candies",
+						"image" : "images/low_blood/orange_juice.png"
+					},
+					{
+						"title" : "TEST BLOOD GLUCOSE, If symptoms don't stop, call your doctor",
+						"image" : "images/low_blood/test_blood.png"
+					},
+					{
+						"title" : "Within 30 minutes after symptoms go away eat a light snack",
+						"image" : "images/low_blood/light_snack.png"
+					}
+				]
+			}
+		},
+		{
+			"title" : "Looking after your feet",
+			"icon" : "after_your_feet",
+			"type" : "feet",
+			"data" : [
+				{
+					"title" : "Wash your feet daily. Test the water temperature with an elbow to avoid scalding accidents."
+				},
+				{
+					"title" : "Dry your feet – especially between toes. Cut and file toenails straight across. Contact a chiropodist if you have any problems.",
+					"image" : "images/feet/dry.png"
+				},
+				{
+					"title" : "Apply moisturiser (or hand cream) to keep your skin supple and prevent cracking.",
+					"image" : "images/feet/moisturiser.png"
+				},
+				{
+					"title" : "It is ESSENTIAL to examine your feet daily for cuts or anything unusual.",
+					"image" : "images/feet/examine.png"
+				},
+				{
+					"title" : "Breaks in the skin should be covered with a dry, sterile dressing. Do NOT burst blisters but seek help from your doctor.",
+					"image" : "images/feet/breaks.png"
+				},
+				{
+					"title" : "NEVER use sharp instruments on your feet. Do NOT use corn plasters etc. as they contain ACIDS. If any problems occur seek advice from your GP, diabetic clinic or chiropodist."
+				},
+				{
+					"title" : "AVOID direct heat and hot water bottles – loss of pain and temperature sensitivity make these dangerous."
+				},
+				{
+					"title" : "Remember DIABETES can affect the rate of healing and breaks in the skin may take a little longer to heal. Older people are most at risk."
+				},
+				{
+					"title" : "Ensure shoes fit well – have your feet measured. Remember shoes must fit feet – NOT VICE VERSA. Never go barefoot.",
+					"image" : "images/feet/shoes.png"
+				},
+				{
+					"title" : "Check inside shoes for sharp objects, etc. Also check inside socks for small things like a pebble etc. to avoid irritation which can lead to a sore.",
+					"image" : "images/feet/inside_shoes.png"
+				},
+				{
+					"title" : "Keep in touch with a chiropodist who is there to advise on foot care."
+				}
+			]
+		}
+	],
+	"common_text" : {
+		"teaspoons" : "Teaspoons",
+		"per_day" : "per day",
+		"total" : "Total fat",
+		"method" : "direct + indirect consumption",
+		"myth" : "Myth",
+		"fact" : "Fact",
+		"cause" : "Cause",
+		"onset" : "Onset"
+	},
+	"diet_charts" : {
+		"counselling_north" : {
+			"title" : "NORTH ZONE",
+			"icon" : "images/diet_zone/north_detail_img.png",
+			"header" : [
+				"Meal",
+				"1200 Kcal",
+				"1500 Kcal",
+				"1800 Kcal",
+				"2100 Kcal"
+			],
+			"body" : [
+				[
+					"Breakfast",
+					"2 and 1/2 Phulka (200 Kcal) + Dal 50 gms (57 Kcal) + Milk 50 ml (35 Kcal) + Fruits (apple/ guava/ grapes/orange) (40 Kcal)",
+					"Same as the first box",
+					"Same as the first box + Milk 50 ml (35 Kcal)",
+					"Same as the first box"
+				],
+				[
+					"Lunch + Afternoon tea",
+					"1 Paratha (180 Kcal) + 50 gms daliya (40 Kcal) + Vegetable curry 100 gms, low oil (100 Kcal) / Meat curry 50 gms (130 Kcal) + 100 gm curd (vegetarians, 67 Kcal)/50 gm curd (35 Kcal) + Milk 50 ml (35 Kcal)",
+					"Same as the first box + 1/2 Paratha (90 Kcal) + 50 gm Dal (57 Kcal)",
+					"Same as the first box +1/2 Paratha (90 Kcal) + 50 gm Vegetable curry (50 Kcal)",
+					"Same as the first box + 100 gms Daliya (78 Kcal) + 50 gm Curd (35 Kcal)"
+				],
+				[
+					"Dinner",
+					"1 Paratha (180 Kcal) + Vegetable curry 100 gms, low oil (100 Kcal) / Meat curry 50 gms (130 Kcal) + 50 gm curd (35 Kcal) + Dal 100 gms (for vegetarians, 114 Kcal)/50 gms (57 Kcal)",
+					"Same as the first box + 1/2 Paratha (90 Kcal) + 50 gms Curd (35 Kcal)",
+					"Same as the first box + 1/2 Paratha (90 Kcal) + 50 gm Vegetable curry (50 Kcal)",
+					"Same as the first box + I Paratha (180 Kcal)"
+				]
+			],			
+			"description" : "T.C.Raghuram, S.Pasricha and R.D.Sharma. Diet and Diabetes. 2012. National Institute of Nutrition, Hyderabad - 500007. C.Gopalan, B.V.Rama Sastri and S.C.Balasubramaniam.Nutritive Value of Indian Foods. 2012.National Institute of Nutrition, Hyderabad - 500007. K. Krishnaswamy. Dietary Guidelines for Indians - A Manual. 2011. National Institute of Nutrition, Hyderabad - 500007. S. Pasricha and L.M.Rebello. Some Common Indian Recipes and their Nutritive Value. 2011. National Institute of Nutrition, Hyderabad - 500007. www.nutritiondata.self.com"
+		},
+		"counselling_south" : {
+			"title" : "SOUTH ZONE",
+			"icon" : "images/diet_zone/south_detail_img.png",
+			"header" : [
+				"Meal",
+				"1200 Kcal",
+				"1500 Kcal",
+				"1800 Kcal",
+				"2100 Kcal"
+			],
+			"body" : [
+				[
+					"Breakfast",
+					"2 Idli (150 Kcal) + 160 gms Sambar (80 Kcal) + 50 ml Milk (35 Kcal) + Fruits (apple/ guava/ grapes/orange) (40 Kcal)",
+					"Same as the first box",
+					"Same as the first box + Milk 50 ml (35 Kcal)",
+					"Same as the first box + Fruits (apple/ guava/ grapes/orange) (40 Kcal)"
+				],
+				[
+					"Lunch + Afternoon tea",
+					"150 gms Plain Rice (165 Kcal) + 160 gms Sambar (80 Kcal) + Vegetable curry 100 gms, low oil (100 Kcal) / Meat curry 50 gms (130 Kcal) + 100 gm curd (vegetarians, 67 Kcal)/50 gm curd (35 Kcal) + Milk 50 ml (35 Kcal)",
+					"Same as the first box + 1/2 Paratha (90 Kcal) + 50 gm Dal (57 Kcal)",
+					"Same as the first box +1/2 Paratha (90 Kcal) + 50 gm Vegetable curry (50 Kcal)",
+					"Same as the first box + 100 gms Daliya (78 Kcal) + 50 gm Curd (35 Kcal)"
+				],
+				[
+					"Dinner",
+					"150 gms Plain Rice (165 Kcal) + Vegetable curry 100 gms, low oil (100 Kcal) / Meat curry 50 gms (130 Kcal) + 100 gm curd (77 Kcal) + Parippu/papp u 100 gms (for vegetarians, 114 Kcal)/50 gms (57 Kcal)",
+					"Same as the first box + 100 gm Kootu (85 Kcal) + 50 gms Curd (35 Kcal)",
+					"Same as the first box + 100 gms green leafy vegetables (130 Kcal)",
+					"Same as the first box + 90 gms Plain Rice (85 Kcal) + Vegetable curry 100 gms, low oil (100 Kcal) / Meat curry 50 gms (130 Kcal)"
+				]
+			],
+			"description" : "T.C.Raghuram, S.Pasricha and R.D.Sharma. Diet and Diabetes. 2012. National Institute of Nutrition, Hyderabad - 500007. C.Gopalan, B.V.Rama Sastri and S.C.Balasubramaniam. Nutritive Value of Indian Foods. 2012.National Institute of Nutrition, Hyderabad - 500007. K. Krishnaswamy. Dietary Guidelines for Indians - A Manual. 2011. National Institute of Nutrition, Hyderabad - 500007. S. Pasricha and L.M.Rebello. Some Common Indian Recipes and their Nutritive Value. 2011. National Institute of Nutrition, Hyderabad - 500007. www.nutritiondata.self.com"
+		},
+		"counselling_west" : {
+			"title" : "WEST ZONE",
+			"icon" : "images/diet_zone/west_detail_img.png",
+			"header" : [
+				"Meal",
+				"1200 Kcal",
+				"1500 Kcal",
+				"1800 Kcal",
+				"2100 Kcal"
+			],
+			"body" : [
+				[
+					"Breakfast",
+					"100 gms Pohe (200 Kcal) + Dal 50 gms (57 Kcal) + Milk 50 ml (35 Kcal) + Fruits (apple/ guava/ grapes/orange) (40 Kcal)",
+					"Same as the first box",
+					"Same as the first box",
+					"Same as the first box + 100 gms Vegetable Salad (50 Kcal)"
+				],
+				[
+					"Lunch + Afternoon tea",
+					"Khichri 100gms (215 Kcal) + Vegetable curry 100 gms, low oil (100 Kcal) / Meat curry 50 gms (130 Kcal) + 100 gm curd (vegetarians, 67 Kcal)/50 gm curd (35 Kcal) + Milk 50 ml (35 Kcal)",
+					"Same as the first box + 1/2 Jowar Roti (85 Kcal) + 50 gm Dal (57 Kcal)",
+					"Same as the first box + 1/2 Jowar Roti (85 Kcal) + 50 gm Vegetable curry (50 Kcal)",
+					"Same as the first box + 50 gms Khichri (110 Kcal) + 50 gm Curd (35 Kcal)"
+				],
+				[
+					"Dinner",
+					"1 Jowar Roti (170 Kcal) + Vegetable curry 100 gms, low oil (100 Kcal) / Meat curry 50 gms (130 Kcal) + 50 gm curd (35 Kcal) + Dal 100 gms (for vegetarians, 114 Kcal)/50 gms (57 Kcal)",
+					"Same as the first box + 1/2 Jowar Roti (85 Kcal)+ 50 gms Curd (35 Kcal)",
+					"Same as the first box + 1/2 Jowar Roti (85 Kcal) + 50 gm Vegetable curry (50 Kcal)",
+					"Same as the first box + I Jowar Roti (170 Kcal)"
+				]
+			],
+			"description" : "T.C.Raghuram, S.Pasricha and R.D.Sharma. Diet and Diabetes. 2012. National Institute of Nutrition, Hyderabad - 500007. C.Gopalan, B.V.Rama Sastri and S.C.Balasubramaniam. Nutritive Value of Indian Foods. 2012.National Institute of Nutrition, Hyderabad - 500007. K. Krishnaswamy. Dietary Guidelines for Indians - A Manual. 2011. National Institute of Nutrition, Hyderabad - 500007. S. Pasricha and L.M.Rebello. Some Common Indian Recipes and their Nutritive Value. 2011. National Institute of Nutrition, Hyderabad - 500007. www.nutritiondata.self.com"
+		},
+		"counselling_east" : {
+			"title" : "EAST ZONE",
+			"icon" : "images/diet_zone/east_detail_img.png",
+			"header" : [
+				"Meal",
+				"1200 Kcal",
+				"1500 Kcal",
+				"1800 Kcal",
+				"2100 Kcal"
+			],
+			"body" : [
+				[
+					"Breakfast",
+					"150 gms Khichri (180 Kcal) + 50 gms Dal (57 Kcal) + 50 ml Milk (35 Kcal) + Fruits (apple/guava/ grapes/orange) (40 Kcal)",
+					"Same as the first box",
+					"Same as the first box + Milk 50 ml (35 Kcal)",
+					"Same as the first box + Fruits (apple/ guava/ grapes/orange) (40 Kcal)"
+				],
+				[
+					"Lunch + Afternoon tea",
+					"150 gms Plain Rice (165 Kcal) + Vegetable curry 100 gms, low oil (100 Kcal) / Meat curry 50 gms (130 Kcal) + Fish curry 100 gms (125 Kcal) + 100 gm curd (vegetarians, 67 Kcal) + Milk 50 ml (35 Kcal)",
+					"Same as the first box + 90 gms Plain Rice (85 Kcal) + 50 gm Dal (57 Kcal)",
+					"Same as the first box + 90 gms Plain Rice (85 Kcal) + 50 gm Vegetable curry (50 Kcal)",
+					"Same as the first box + 50 gm Dal (57 Kcal) + 50 gm Curd (35 Kcal)"
+				],
+				[
+					"Dinner",
+					"150 gms Plain Rice (165 Kcal) + Vegetable curry 100 gms, low oil (100 Kcal) / Fish curry 100 gms (125 Kcal) + 100 gm curd (77 Kcal) + Dal 100 gms (for vegetarians, 114 Kcal)/50 gms (57 Kcal)",
+					"Same as the first box + 100 gms green leafy vegetables (130 Kcal)",
+					"Same as the first box + 100 gms green leafy vegetables (130 Kcal)",
+					"Same as the first box + 100 gms Khichuri (127) + Vegetable curry 100 gms, low oil (100 Kcal) / Fish curry 100 gms (125 Kcal)"
+				]
+			],			
+			"description" : "T.C.Raghuram, S.Pasricha and R.D.Sharma. Diet and Diabetes. 2012. National Institute of Nutrition, Hyderabad - 500007. C.Gopalan, B.V.Rama Sastri and S.C.Balasubramaniam. Nutritive Value of Indian Foods. 2012.National Institute of Nutrition, Hyderabad - 500007. K. Krishnaswamy. Dietary Guidelines for Indians - A Manual. 2011. National Institute of Nutrition, Hyderabad - 500007. S. Pasricha and L.M.Rebello. Some Common Indian Recipes and their Nutritive Value. 2011. National Institute of Nutrition, Hyderabad - 500007. www.nutritiondata.self.com"
+		}
+	},
+	"disclaimer" : {
+		"title" : "Disclaimer",
+		"description" : "Content shown is adapted from information available on internet / public domain. Novo Nordisk holds no responsibility for accurateness of data."
+	}
+}
