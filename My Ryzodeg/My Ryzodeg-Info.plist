@@ -57,5 +57,7 @@
     <array>
       <string>audio</string>
     </array>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Allowing access to your location, To find the distance by walking</string>
   </dict>
 </plist>
